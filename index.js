@@ -4,7 +4,7 @@ const port = 3000;
 
 if (process.env.NODE_ENV !== 'production') require('dotenv').config();
 
-const SHA = process.env.GIT_COMMIT_SHA || 'not_found';
+const SHA = process.env.GIT_COMMIT_SHA_ID || 'not_found';
 
 app.get("/", (req, res) => {
     res.send(`git hash: ${SHA}`);
