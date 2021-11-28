@@ -2,8 +2,12 @@ const express = require("express");
 const app = express();
 const port = 3000;
 
+if (process.env.NODE_ENV !== 'production') require('dotenv').config();
+
+const SHA = process.env.GIT_COMMIT_SHA || 'not_found';
+
 app.get("/", (req, res) => {
-    res.send("git hash: 1234567");
+    res.send(`git hash: ${SHA}`);
 });
 
 app.listen(port, () => console.log(`Server is running http://localhost:3000`));
