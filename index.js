@@ -2,9 +2,7 @@ const express = require("express");
 const app = express();
 const port = 3000;
 
-// if (process.env.NODE_ENV !== 'production') require('dotenv').config();
-
-require('dotenv').config();
+if (process.env.NODE_ENV !== 'production') require('dotenv').config();
 
 const SHA = process.env.GIT_COMMIT_SHA_ID || 'not_found';
 
