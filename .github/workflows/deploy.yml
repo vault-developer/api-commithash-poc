@@ -16,4 +16,4 @@ jobs:
           heroku_app_name: "api-commithash-poc"
           heroku_email: "trott.alik@gmail.com"
         env:
-          HD_COMMIT_SHA: '123123'
+          HD_COMMIT_SHA: ${{github.sha}}
