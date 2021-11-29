@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 
-if (process.env.NODE_ENV !== 'production') require('dotenv').config();
+// if (process.env.NODE_ENV !== 'production') require('dotenv').config();
 
 const SHA = process.env.HD_COMMIT_SHA || 'not_found';
 
