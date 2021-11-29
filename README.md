@@ -14,3 +14,6 @@ https://api-commithash-poc.herokuapp.com/
 1. Create `.env` file with `COMMIT_SHA` variable.
 2. Execute command `yarn`.
 3. Execute command `node app.js`
+
+### Security:
+1. Probably it will be enough to use this approach on `dev`/`stg` environments only if we don't want to show it in `production`.
