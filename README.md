@@ -5,7 +5,12 @@ Such approach can be useful to find out exact code state if other approaches fai
 ### Check deployment here:
 https://api-commithash-poc.herokuapp.com/
 
-### How to launch:
+### How to reproduce via CI:
 1. Create Heroku account
 2. Update configs in .github/workflows/deploy.yml
 3. Create a commit to master branch
+
+### How to launch locally:
+1. Create `.env` file with `COMMIT_SHA` variable.
+2. Execute command `yarn`.
+3. Execute command `node app.js`
