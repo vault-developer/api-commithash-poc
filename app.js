@@ -1,6 +1,5 @@
 const express = require("express");
 const app = express();
-const port = 3000;
 
 if (process.env.NODE_ENV !== 'production') require('dotenv').config();
 
@@ -10,4 +9,4 @@ app.get("/", (req, res) => {
     res.send(`git hash: ${SHA}`);
 });
 
-app.listen(port, () => console.log(`Server is running http://localhost:3000`));
+app.listen(process.env.PORT || 3000, () => console.log("Server is running..."));
