@@ -15,7 +15,5 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "api-commithash-poc"
           heroku_email: "trott.alik@gmail.com"
-          usedocker: true
-          docker_build_args: HD_COMMIT_SHA
         env:
           HD_COMMIT_SHA: '123123'
