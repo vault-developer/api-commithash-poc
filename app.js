@@ -3,10 +3,11 @@ const app = express();
 
 // if (process.env.NODE_ENV !== 'production') require('dotenv').config();
 
-console.log(process.env);
-const SHA = process.env.HD_COMMIT_SHA || 'not_found!!';
+
+const SHA = process.env.HD_COMMIT_SHA || 'not_found4';
 
 app.get("/", (req, res) => {
+    console.log(process.env);
     res.send(`git hash: ${SHA}`);
 });
 
